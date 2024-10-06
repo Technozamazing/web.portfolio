@@ -190,19 +190,22 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="https://formspree.io/f/myzygpey" method="POST" class="contact__form">
-                        <label>
-                        <input type="text" name="Name" class="contact__input">
-                        </label>
-                        <label>
-                          <input type="email" name="Email" class="contact_input">
-                       </label>
-                       <label>
-                         <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
-                       </label>
-  
-                       <button type="submit" class="contact_button">Submit</button>
-                   </form>
+                    <form action="https://formspree.io/f/mbjnwlza" method="post" class="contact_form" id="contact_form" autocomplete="off">
+                    <div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
+                    <div class="empty_notice"><span>Please Fill Required Fields</span></div>
+                    <div class="first_row">
+                    <input id="name" type="text" placeholder="Name*" name="client-name" required />
+                    </div>
+                    <div class="second">
+                    <input id="email" type="email" placeholder="Email*" name="client-email" required />
+                    </div>
+                    <div class="third">
+                    <textarea id="message" placeholder="Message*" name="client-message" required></textarea>
+                    </div>
+                    <div class="edina_tm_button">
+                    <button type="submit">Submit</button>
+                    </div>
+                  </form>  
                 </div>
             </section>
         </main>
