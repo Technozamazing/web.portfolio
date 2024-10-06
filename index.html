@@ -190,12 +190,18 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="https://formspree.io/f/myzygpey" method="POST" class="contact__form">
-                        <input type="text" name="Name" class="contact__input">
-                        <input type="mail" name="Email" class="contact__input">
-                        <textarea name="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
-                    </form>
+                    <form action="https://formspree.io/f/myzygpey" method="POST">
+                       <label>
+                          Your email:
+                          <input type="email" name="email">
+                       </label>
+                       <label>
+                         Your message:
+                         <textarea name="message"></textarea>
+                       </label>
+  
+                       <button type="submit">Send</button>
+                   </form>
                 </div>
             </section>
         </main>
